@@ -1,0 +1,4 @@
+corridor_id,track_id,track_capacity,current_occupancy,direction,compatible_train_types,alternative_routing_possible,block_availability,existing_restrictions,maintenance_restrictions
+C1,T1,100,100,Both,"Passenger,Goods",False,True,None,"Maintenance requested"
+C1,T2,100,40,Both,"Passenger,Goods",True,True,None,None
+C1,T3,100,60,Both,"Passenger,Goods",True,True,None,None

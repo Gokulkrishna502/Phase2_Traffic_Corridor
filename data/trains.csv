@@ -1,0 +1,9 @@
+train_id,train_type,category,train_priority,corridor_id,track_id,arrival_time,departure_time,date,direction,expected_delay_minutes,historical_avg_trains_per_hour,historical_traffic_density
+T101,Express Passenger,Passenger,1,C1,T1,08:00,08:05,2026-08-28,A-B,2,5,HIGH
+T102,Passenger,Passenger,2,C1,T1,08:40,08:45,2026-08-28,B-A,1,5,HIGH
+T103,Goods,Goods,3,C1,T1,09:25,09:35,2026-08-28,A-B,4,4,MEDIUM
+T104,Express Passenger,Passenger,1,C1,T1,10:10,10:15,2026-08-28,B-A,1,3,MEDIUM
+T105,Passenger,Passenger,2,C1,T1,12:00,12:05,2026-08-28,A-B,0,2,LOW
+T106,Goods,Goods,3,C1,T1,13:10,13:20,2026-08-28,B-A,3,3,MEDIUM
+T107,Express Passenger,Passenger,1,C1,T1,14:00,14:05,2026-08-28,A-B,1,5,HIGH
+T108,Passenger,Passenger,2,C1,T1,15:00,15:05,2026-08-28,B-A,2,4,MEDIUM

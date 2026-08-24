@@ -1,0 +1,15 @@
+{
+    "task_id": "M001",
+    "location": "A-B",
+    "corridor_id": "C1",
+    "track_id": "T1",
+    "required_duration_minutes": 90,
+    "priority_score": 9,
+    "deadline": "2026-08-28",
+    "department": "Engineering",
+    "workers_required": 8,
+    "equipment_required": [
+        "Tamping Machine"
+    ],
+    "maintenance_type": "Track Maintenance"
+}
