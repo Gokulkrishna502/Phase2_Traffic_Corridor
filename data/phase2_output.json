@@ -1,0 +1,989 @@
+{
+    "phase": "Phase 2",
+    "module": "Traffic & Corridor Analysis Engine",
+    "phase2_role": "Generate all possible traffic and corridor options for Phase 3. Phase 2 does not select the final block.",
+    "generated_at": "2026-08-24T15:21:33.195179",
+    "maintenance_request": {
+        "task_id": "M001",
+        "location": "A-B",
+        "corridor_id": "C1",
+        "maintenance_track": "T1",
+        "required_duration_minutes": 90.0,
+        "priority_score": 9,
+        "deadline": "2026-08-28",
+        "department": "Engineering",
+        "workers_required": 8,
+        "equipment_required": [
+            "Tamping Machine"
+        ],
+        "maintenance_type": "Track Maintenance"
+    },
+    "traffic_summary": {
+        "total_trains": 8,
+        "analysis_span_hours": 7.0,
+        "trains_per_hour": 1.14,
+        "passenger_trains": 6,
+        "goods_trains": 2,
+        "passenger_trains_per_hour": 0.86,
+        "goods_trains_per_hour": 0.29,
+        "traffic_density": "LOW"
+    },
+    "hourly_traffic": [
+        {
+            "period": "08:00-09:00",
+            "hour": 8,
+            "total_trains": 2,
+            "passenger_trains": 2,
+            "goods_trains": 0,
+            "traffic_density": "LOW"
+        },
+        {
+            "period": "09:00-10:00",
+            "hour": 9,
+            "total_trains": 1,
+            "passenger_trains": 0,
+            "goods_trains": 1,
+            "traffic_density": "LOW"
+        },
+        {
+            "period": "10:00-11:00",
+            "hour": 10,
+            "total_trains": 1,
+            "passenger_trains": 1,
+            "goods_trains": 0,
+            "traffic_density": "LOW"
+        },
+        {
+            "period": "12:00-13:00",
+            "hour": 12,
+            "total_trains": 1,
+            "passenger_trains": 1,
+            "goods_trains": 0,
+            "traffic_density": "LOW"
+        },
+        {
+            "period": "13:00-14:00",
+            "hour": 13,
+            "total_trains": 1,
+            "passenger_trains": 0,
+            "goods_trains": 1,
+            "traffic_density": "LOW"
+        },
+        {
+            "period": "14:00-15:00",
+            "hour": 14,
+            "total_trains": 1,
+            "passenger_trains": 1,
+            "goods_trains": 0,
+            "traffic_density": "LOW"
+        },
+        {
+            "period": "15:00-16:00",
+            "hour": 15,
+            "total_trains": 1,
+            "passenger_trains": 1,
+            "goods_trains": 0,
+            "traffic_density": "LOW"
+        }
+    ],
+    "candidate_gaps": [
+        {
+            "gap_id": "G001",
+            "start": "08:05",
+            "end": "08:40",
+            "gap_start_datetime": "2026-08-28T08:05:00",
+            "gap_end_datetime": "2026-08-28T08:40:00",
+            "duration_minutes": 35.0,
+            "previous_train": {
+                "train_id": "T101",
+                "train_type": "Express Passenger",
+                "category": "Passenger",
+                "priority": 1,
+                "direction": "A-B",
+                "departure_time": "08:05"
+            },
+            "next_train": {
+                "train_id": "T102",
+                "train_type": "Passenger",
+                "category": "Passenger",
+                "priority": 2,
+                "direction": "B-A",
+                "arrival_time": "08:40"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": false,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": false,
+            "traffic_during_gap_context": {
+                "period": "08:00-09:00",
+                "trains_per_hour": 2,
+                "passenger_trains": 2,
+                "goods_trains": 0,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 2,
+                "passenger_trains_context": 2,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        },
+        {
+            "gap_id": "G002",
+            "start": "08:45",
+            "end": "09:25",
+            "gap_start_datetime": "2026-08-28T08:45:00",
+            "gap_end_datetime": "2026-08-28T09:25:00",
+            "duration_minutes": 40.0,
+            "previous_train": {
+                "train_id": "T102",
+                "train_type": "Passenger",
+                "category": "Passenger",
+                "priority": 2,
+                "direction": "B-A",
+                "departure_time": "08:45"
+            },
+            "next_train": {
+                "train_id": "T103",
+                "train_type": "Goods",
+                "category": "Goods",
+                "priority": 3,
+                "direction": "A-B",
+                "arrival_time": "09:25"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": false,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": false,
+            "traffic_during_gap_context": {
+                "period": "08:00-09:00",
+                "trains_per_hour": 2,
+                "passenger_trains": 2,
+                "goods_trains": 0,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 2,
+                "passenger_trains_context": 2,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        },
+        {
+            "gap_id": "G003",
+            "start": "09:35",
+            "end": "10:10",
+            "gap_start_datetime": "2026-08-28T09:35:00",
+            "gap_end_datetime": "2026-08-28T10:10:00",
+            "duration_minutes": 35.0,
+            "previous_train": {
+                "train_id": "T103",
+                "train_type": "Goods",
+                "category": "Goods",
+                "priority": 3,
+                "direction": "A-B",
+                "departure_time": "09:35"
+            },
+            "next_train": {
+                "train_id": "T104",
+                "train_type": "Express Passenger",
+                "category": "Passenger",
+                "priority": 1,
+                "direction": "B-A",
+                "arrival_time": "10:10"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": false,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": false,
+            "traffic_during_gap_context": {
+                "period": "09:00-10:00",
+                "trains_per_hour": 1,
+                "passenger_trains": 0,
+                "goods_trains": 1,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 0,
+                "goods_trains_context": 1,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        },
+        {
+            "gap_id": "G004",
+            "start": "10:15",
+            "end": "12:00",
+            "gap_start_datetime": "2026-08-28T10:15:00",
+            "gap_end_datetime": "2026-08-28T12:00:00",
+            "duration_minutes": 105.0,
+            "previous_train": {
+                "train_id": "T104",
+                "train_type": "Express Passenger",
+                "category": "Passenger",
+                "priority": 1,
+                "direction": "B-A",
+                "departure_time": "10:15"
+            },
+            "next_train": {
+                "train_id": "T105",
+                "train_type": "Passenger",
+                "category": "Passenger",
+                "priority": 2,
+                "direction": "A-B",
+                "arrival_time": "12:00"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": true,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": true,
+            "traffic_during_gap_context": {
+                "period": "10:00-11:00",
+                "trains_per_hour": 1,
+                "passenger_trains": 1,
+                "goods_trains": 0,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 1,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        },
+        {
+            "gap_id": "G005",
+            "start": "12:05",
+            "end": "13:10",
+            "gap_start_datetime": "2026-08-28T12:05:00",
+            "gap_end_datetime": "2026-08-28T13:10:00",
+            "duration_minutes": 65.0,
+            "previous_train": {
+                "train_id": "T105",
+                "train_type": "Passenger",
+                "category": "Passenger",
+                "priority": 2,
+                "direction": "A-B",
+                "departure_time": "12:05"
+            },
+            "next_train": {
+                "train_id": "T106",
+                "train_type": "Goods",
+                "category": "Goods",
+                "priority": 3,
+                "direction": "B-A",
+                "arrival_time": "13:10"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": false,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": false,
+            "traffic_during_gap_context": {
+                "period": "12:00-13:00",
+                "trains_per_hour": 1,
+                "passenger_trains": 1,
+                "goods_trains": 0,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 1,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        },
+        {
+            "gap_id": "G006",
+            "start": "13:20",
+            "end": "14:00",
+            "gap_start_datetime": "2026-08-28T13:20:00",
+            "gap_end_datetime": "2026-08-28T14:00:00",
+            "duration_minutes": 40.0,
+            "previous_train": {
+                "train_id": "T106",
+                "train_type": "Goods",
+                "category": "Goods",
+                "priority": 3,
+                "direction": "B-A",
+                "departure_time": "13:20"
+            },
+            "next_train": {
+                "train_id": "T107",
+                "train_type": "Express Passenger",
+                "category": "Passenger",
+                "priority": 1,
+                "direction": "A-B",
+                "arrival_time": "14:00"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": false,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": false,
+            "traffic_during_gap_context": {
+                "period": "13:00-14:00",
+                "trains_per_hour": 1,
+                "passenger_trains": 0,
+                "goods_trains": 1,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 0,
+                "goods_trains_context": 1,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        },
+        {
+            "gap_id": "G007",
+            "start": "14:05",
+            "end": "15:00",
+            "gap_start_datetime": "2026-08-28T14:05:00",
+            "gap_end_datetime": "2026-08-28T15:00:00",
+            "duration_minutes": 55.0,
+            "previous_train": {
+                "train_id": "T107",
+                "train_type": "Express Passenger",
+                "category": "Passenger",
+                "priority": 1,
+                "direction": "A-B",
+                "departure_time": "14:05"
+            },
+            "next_train": {
+                "train_id": "T108",
+                "train_type": "Passenger",
+                "category": "Passenger",
+                "priority": 2,
+                "direction": "B-A",
+                "arrival_time": "15:00"
+            },
+            "trains_before_gap": 1,
+            "trains_after_gap": 1,
+            "duration_sufficient_for_phase1_requirement": false,
+            "required_duration_minutes": 90.0,
+            "is_longest_gap": false,
+            "traffic_during_gap_context": {
+                "period": "14:00-15:00",
+                "trains_per_hour": 1,
+                "passenger_trains": 1,
+                "goods_trains": 0,
+                "traffic_density": "LOW"
+            },
+            "potential_train_impact": {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 1,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        }
+    ],
+    "corridor_analysis": {
+        "corridor_id": "C1",
+        "maintenance_track": "T1",
+        "number_of_tracks": 3,
+        "tracks": [
+            {
+                "corridor_id": "C1",
+                "track_id": "T1",
+                "status": "maintenance_candidate",
+                "track_capacity": 100.0,
+                "current_occupancy": 100.0,
+                "occupancy_percentage": 100.0,
+                "available_capacity": 0.0,
+                "available_capacity_percentage": 0.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": false,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "Maintenance requested"
+            },
+            {
+                "corridor_id": "C1",
+                "track_id": "T2",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 40.0,
+                "occupancy_percentage": 40.0,
+                "available_capacity": 60.0,
+                "available_capacity_percentage": 60.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            },
+            {
+                "corridor_id": "C1",
+                "track_id": "T3",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 60.0,
+                "occupancy_percentage": 60.0,
+                "available_capacity": 40.0,
+                "available_capacity_percentage": 40.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            }
+        ],
+        "alternative_tracks": [
+            {
+                "corridor_id": "C1",
+                "track_id": "T2",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 40.0,
+                "occupancy_percentage": 40.0,
+                "available_capacity": 60.0,
+                "available_capacity_percentage": 60.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            },
+            {
+                "corridor_id": "C1",
+                "track_id": "T3",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 60.0,
+                "occupancy_percentage": 60.0,
+                "available_capacity": 40.0,
+                "available_capacity_percentage": 40.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            }
+        ],
+        "total_alternative_available_capacity": 100.0
+    },
+    "historical_traffic": {
+        "historical_data_available": true,
+        "historical_average_trains_per_hour": 3.88,
+        "historical_traffic_density": "MEDIUM",
+        "average_expected_delay_minutes": 1.75
+    },
+    "goods_train_forecast": {
+        "forecast_available": false,
+        "forecast_goods_trains": 2,
+        "method": "Current timetable goods count; no forecast column supplied"
+    },
+    "phase3_input": {
+        "candidate_gaps": [
+            {
+                "gap_id": "G001",
+                "start": "08:05",
+                "end": "08:40",
+                "gap_start_datetime": "2026-08-28T08:05:00",
+                "gap_end_datetime": "2026-08-28T08:40:00",
+                "duration_minutes": 35.0,
+                "previous_train": {
+                    "train_id": "T101",
+                    "train_type": "Express Passenger",
+                    "category": "Passenger",
+                    "priority": 1,
+                    "direction": "A-B",
+                    "departure_time": "08:05"
+                },
+                "next_train": {
+                    "train_id": "T102",
+                    "train_type": "Passenger",
+                    "category": "Passenger",
+                    "priority": 2,
+                    "direction": "B-A",
+                    "arrival_time": "08:40"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": false,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": false,
+                "traffic_during_gap_context": {
+                    "period": "08:00-09:00",
+                    "trains_per_hour": 2,
+                    "passenger_trains": 2,
+                    "goods_trains": 0,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 2,
+                    "passenger_trains_context": 2,
+                    "goods_trains_context": 0,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            },
+            {
+                "gap_id": "G002",
+                "start": "08:45",
+                "end": "09:25",
+                "gap_start_datetime": "2026-08-28T08:45:00",
+                "gap_end_datetime": "2026-08-28T09:25:00",
+                "duration_minutes": 40.0,
+                "previous_train": {
+                    "train_id": "T102",
+                    "train_type": "Passenger",
+                    "category": "Passenger",
+                    "priority": 2,
+                    "direction": "B-A",
+                    "departure_time": "08:45"
+                },
+                "next_train": {
+                    "train_id": "T103",
+                    "train_type": "Goods",
+                    "category": "Goods",
+                    "priority": 3,
+                    "direction": "A-B",
+                    "arrival_time": "09:25"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": false,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": false,
+                "traffic_during_gap_context": {
+                    "period": "08:00-09:00",
+                    "trains_per_hour": 2,
+                    "passenger_trains": 2,
+                    "goods_trains": 0,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 2,
+                    "passenger_trains_context": 2,
+                    "goods_trains_context": 0,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            },
+            {
+                "gap_id": "G003",
+                "start": "09:35",
+                "end": "10:10",
+                "gap_start_datetime": "2026-08-28T09:35:00",
+                "gap_end_datetime": "2026-08-28T10:10:00",
+                "duration_minutes": 35.0,
+                "previous_train": {
+                    "train_id": "T103",
+                    "train_type": "Goods",
+                    "category": "Goods",
+                    "priority": 3,
+                    "direction": "A-B",
+                    "departure_time": "09:35"
+                },
+                "next_train": {
+                    "train_id": "T104",
+                    "train_type": "Express Passenger",
+                    "category": "Passenger",
+                    "priority": 1,
+                    "direction": "B-A",
+                    "arrival_time": "10:10"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": false,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": false,
+                "traffic_during_gap_context": {
+                    "period": "09:00-10:00",
+                    "trains_per_hour": 1,
+                    "passenger_trains": 0,
+                    "goods_trains": 1,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 1,
+                    "passenger_trains_context": 0,
+                    "goods_trains_context": 1,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            },
+            {
+                "gap_id": "G004",
+                "start": "10:15",
+                "end": "12:00",
+                "gap_start_datetime": "2026-08-28T10:15:00",
+                "gap_end_datetime": "2026-08-28T12:00:00",
+                "duration_minutes": 105.0,
+                "previous_train": {
+                    "train_id": "T104",
+                    "train_type": "Express Passenger",
+                    "category": "Passenger",
+                    "priority": 1,
+                    "direction": "B-A",
+                    "departure_time": "10:15"
+                },
+                "next_train": {
+                    "train_id": "T105",
+                    "train_type": "Passenger",
+                    "category": "Passenger",
+                    "priority": 2,
+                    "direction": "A-B",
+                    "arrival_time": "12:00"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": true,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": true,
+                "traffic_during_gap_context": {
+                    "period": "10:00-11:00",
+                    "trains_per_hour": 1,
+                    "passenger_trains": 1,
+                    "goods_trains": 0,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 1,
+                    "passenger_trains_context": 1,
+                    "goods_trains_context": 0,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            },
+            {
+                "gap_id": "G005",
+                "start": "12:05",
+                "end": "13:10",
+                "gap_start_datetime": "2026-08-28T12:05:00",
+                "gap_end_datetime": "2026-08-28T13:10:00",
+                "duration_minutes": 65.0,
+                "previous_train": {
+                    "train_id": "T105",
+                    "train_type": "Passenger",
+                    "category": "Passenger",
+                    "priority": 2,
+                    "direction": "A-B",
+                    "departure_time": "12:05"
+                },
+                "next_train": {
+                    "train_id": "T106",
+                    "train_type": "Goods",
+                    "category": "Goods",
+                    "priority": 3,
+                    "direction": "B-A",
+                    "arrival_time": "13:10"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": false,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": false,
+                "traffic_during_gap_context": {
+                    "period": "12:00-13:00",
+                    "trains_per_hour": 1,
+                    "passenger_trains": 1,
+                    "goods_trains": 0,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 1,
+                    "passenger_trains_context": 1,
+                    "goods_trains_context": 0,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            },
+            {
+                "gap_id": "G006",
+                "start": "13:20",
+                "end": "14:00",
+                "gap_start_datetime": "2026-08-28T13:20:00",
+                "gap_end_datetime": "2026-08-28T14:00:00",
+                "duration_minutes": 40.0,
+                "previous_train": {
+                    "train_id": "T106",
+                    "train_type": "Goods",
+                    "category": "Goods",
+                    "priority": 3,
+                    "direction": "B-A",
+                    "departure_time": "13:20"
+                },
+                "next_train": {
+                    "train_id": "T107",
+                    "train_type": "Express Passenger",
+                    "category": "Passenger",
+                    "priority": 1,
+                    "direction": "A-B",
+                    "arrival_time": "14:00"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": false,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": false,
+                "traffic_during_gap_context": {
+                    "period": "13:00-14:00",
+                    "trains_per_hour": 1,
+                    "passenger_trains": 0,
+                    "goods_trains": 1,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 1,
+                    "passenger_trains_context": 0,
+                    "goods_trains_context": 1,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            },
+            {
+                "gap_id": "G007",
+                "start": "14:05",
+                "end": "15:00",
+                "gap_start_datetime": "2026-08-28T14:05:00",
+                "gap_end_datetime": "2026-08-28T15:00:00",
+                "duration_minutes": 55.0,
+                "previous_train": {
+                    "train_id": "T107",
+                    "train_type": "Express Passenger",
+                    "category": "Passenger",
+                    "priority": 1,
+                    "direction": "A-B",
+                    "departure_time": "14:05"
+                },
+                "next_train": {
+                    "train_id": "T108",
+                    "train_type": "Passenger",
+                    "category": "Passenger",
+                    "priority": 2,
+                    "direction": "B-A",
+                    "arrival_time": "15:00"
+                },
+                "trains_before_gap": 1,
+                "trains_after_gap": 1,
+                "duration_sufficient_for_phase1_requirement": false,
+                "required_duration_minutes": 90.0,
+                "is_longest_gap": false,
+                "traffic_during_gap_context": {
+                    "period": "14:00-15:00",
+                    "trains_per_hour": 1,
+                    "passenger_trains": 1,
+                    "goods_trains": 0,
+                    "traffic_density": "LOW"
+                },
+                "potential_train_impact": {
+                    "impact_level": "LOW",
+                    "trains_per_hour_context": 1,
+                    "passenger_trains_context": 1,
+                    "goods_trains_context": 0,
+                    "alternative_capacity_available": 100.0,
+                    "note": "Impact is informational. Phase 3 must make the final operational decision."
+                }
+            }
+        ],
+        "train_frequency": 1.14,
+        "passenger_train_count": 6,
+        "goods_train_count": 2,
+        "traffic_density": "LOW",
+        "corridor_occupancy": [
+            {
+                "corridor_id": "C1",
+                "track_id": "T1",
+                "status": "maintenance_candidate",
+                "track_capacity": 100.0,
+                "current_occupancy": 100.0,
+                "occupancy_percentage": 100.0,
+                "available_capacity": 0.0,
+                "available_capacity_percentage": 0.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": false,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "Maintenance requested"
+            },
+            {
+                "corridor_id": "C1",
+                "track_id": "T2",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 40.0,
+                "occupancy_percentage": 40.0,
+                "available_capacity": 60.0,
+                "available_capacity_percentage": 60.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            },
+            {
+                "corridor_id": "C1",
+                "track_id": "T3",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 60.0,
+                "occupancy_percentage": 60.0,
+                "available_capacity": 40.0,
+                "available_capacity_percentage": 40.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            }
+        ],
+        "alternative_track_capacity": [
+            {
+                "corridor_id": "C1",
+                "track_id": "T2",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 40.0,
+                "occupancy_percentage": 40.0,
+                "available_capacity": 60.0,
+                "available_capacity_percentage": 60.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            },
+            {
+                "corridor_id": "C1",
+                "track_id": "T3",
+                "status": "available_for_rerouting",
+                "track_capacity": 100.0,
+                "current_occupancy": 60.0,
+                "occupancy_percentage": 60.0,
+                "available_capacity": 40.0,
+                "available_capacity_percentage": 40.0,
+                "direction": "Both",
+                "compatible_train_types": "Passenger,Goods",
+                "alternative_routing_possible": true,
+                "block_availability": true,
+                "existing_restrictions": "nan",
+                "maintenance_restrictions": "nan"
+            }
+        ],
+        "potential_train_impact": [
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 2,
+                "passenger_trains_context": 2,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            },
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 2,
+                "passenger_trains_context": 2,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            },
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 0,
+                "goods_trains_context": 1,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            },
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 1,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            },
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 1,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            },
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 0,
+                "goods_trains_context": 1,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            },
+            {
+                "impact_level": "LOW",
+                "trains_per_hour_context": 1,
+                "passenger_trains_context": 1,
+                "goods_trains_context": 0,
+                "alternative_capacity_available": 100.0,
+                "note": "Impact is informational. Phase 3 must make the final operational decision."
+            }
+        ],
+        "historical_traffic": {
+            "historical_data_available": true,
+            "historical_average_trains_per_hour": 3.88,
+            "historical_traffic_density": "MEDIUM",
+            "average_expected_delay_minutes": 1.75
+        },
+        "goods_train_forecast": {
+            "forecast_available": false,
+            "forecast_goods_trains": 2,
+            "method": "Current timetable goods count; no forecast column supplied"
+        }
+    },
+    "important_boundary": {
+        "phase2_does": [
+            "Find all actual train gaps",
+            "Calculate gap duration",
+            "Calculate train frequency",
+            "Classify passenger and goods traffic",
+            "Calculate traffic density",
+            "Analyse corridor occupancy",
+            "Calculate alternative-track capacity",
+            "Provide potential train impact",
+            "Provide historical traffic information"
+        ],
+        "phase2_does_not": [
+            "Select the final maintenance window",
+            "Assign workers",
+            "Assign equipment",
+            "Optimize the final block",
+            "Make the final operational decision"
+        ]
+    }
+}
